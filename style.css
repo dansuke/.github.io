@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Hina+Mincho&family=Kaisei+Opti:wght@500&family=Mochiy+Pop+P+One&family=New+Tegomin&family=Noto+Serif+JP:wght@500&family=Otomanopee+One&family=Palette+Mosaic&family=Potta+One&family=Reggae+One&family=Sawarabi+Mincho&family=Stick&family=Train+One&family=Yomogi&family=Yuji+Mai&family=Zen+Maru+Gothic:wght@300&display=swap');
+@font-face {
+	font-family: 'nicoca';
+	src: url(/fonts/nicoca_v1.ttf);
+}
+@font-face {
+	font-family: 'karakaze';
+	src: url(/fonts/karakaze-R.ttf);
+}
+@font-face {
+	font-family: 'Corporate-Mincho-ver2';
+	src: url(/fonts/Corporate-Mincho-ver2.ttf);
+}
+@font-face {
+	font-family: 'GenEiLateGoN_v2';
+	src: url(/fonts/GenEiLateGoN_v2.ttf);
+}
+@font-face {
+	font-family: 'gomarice_mukasi_mukasi';
+	src: url(/fonts/gomarice_mukasi_mukasi.ttf);
+}
+@font-face {
+	font-family: 'Kaisotai';
+	src: url(/fonts/Kaisotai-Next-UP-B.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+head{
+    font-family: 'karakaze', sans-serif;
+}
+
+body{
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.header {
+  background-color: #3b3b3b;
+  color: #ffffff;
+  height:5vh;
+}
+
+.footer {
+  background-color: #3b3b3b;
+  color: #ffffff;
+  height:5vh;
+}
+
+.main {
+  z-index: 100;
+}
+
+.explain
+{
+    display:none;
+    width:100%; 
+    top:12vmin;
+    font-size: 3vmin;
+    text-align: center;
+    position: absolute;
+    color: #9b9b9b;
+}
+
+.text-content{
+    position: absolute;
+    text-align: center;
+    top: 2vmin;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.type-text{
+    color: rgb(0, 0, 0);
+    font-family: 'karakaze';
+    font-size: 8vmin;
+}
+
+.ityped-cursor{
+    color: rgb(73, 73, 73);
+    font-size: 6vmin;
+}
+
+.box-container
+{
+    top: 20vmin;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 70%;
+    left: 5%;
+    padding: 3em 3em;
+}
+
+.box{
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.area{
+    width: 100%;
+    top:0vh;
+    height:100vh;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient( transparent 95%, rgba(0, 0, 0, .06) 50%, rgba(0, 0, 0, .06)), linear-gradient( 90deg, transparent 95%, rgba(0, 0, 0, .06) 50%, rgba(0, 0, 0, .06) );
+    background-size: 3vmin 3vmin;
+    background-repeat: repeat;
+    z-index: 0;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    user-select: none;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    color: #a1a1a1;
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    font-family: 'nicoca';
+}
+
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 8s;
+    font-size: 80px;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+    font-size: 50px;
+    font-family: 'Hina Mincho', serif;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 14s;
+    font-size: 70px;
+    font-family: 'Kaisei Opti', serif;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 10s;
+    animation-duration: 18s;
+    font-size: 60px;
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 5s;
+    font-size: 20px;
+    font-family: 'New Tegomin', serif;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+    font-size: 110px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.circles li:nth-child(7){
+    left: 75%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+    font-size: 150px;
+    font-family: 'Otomanopee One', sans-serif;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+    font-size: 25px;
+    font-family: 'Palette Mosaic', cursive;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+    font-size: 15px;
+    font-family: 'Potta One', cursive;
+}
+
+.circles li:nth-child(10){
+    left: 10%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 20s;
+    font-size: 150px;
+    font-family: 'Reggae One', cursive;
+}
+
+.circles li:nth-child(11){
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5s;
+    animation-duration: 20s;
+    font-size: 100px;
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.circles li:nth-child(12){
+    left: 10%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 8s;
+    animation-duration: 30s;
+    font-size: 30px;
+    font-family: 'Stick', sans-serif;
+}
+
+.circles li:nth-child(13){
+    left: 85%;
+    width: 10px;
+    height: 10px;
+    animation-delay: 10s;
+    animation-duration: 15s;
+    font-size: 10px;
+    font-family: 'Train One', cursive;
+}
+
+.circles li:nth-child(14){
+    left: 75%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 9s;
+    animation-duration: 25s;
+    font-size: 40px;
+    font-family: 'Yomogi', cursive;
+}
+
+.circles li:nth-child(15){
+    left: 65%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 5s;
+    animation-duration: 15s;
+    font-size: 90px;
+    font-family: 'Yuji Mai', serif;
+}
+
+.circles li:nth-child(16){
+    left: 55%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 10s;
+    animation-duration: 20s;
+    font-size: 25px;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+.circles li:nth-child(17){
+    left: 45%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 7s;
+    animation-duration: 10s;
+    font-size: 80px;
+    font-family:'karakaze'
+}
+
+.circles li:nth-child(18){
+    left: 35%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 5s;
+    animation-duration: 15s;
+    font-size: 50px;
+    font-family: 'Corporate-Mincho-ver2';
+}
+
+.circles li:nth-child(19){
+    left: 25%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 3s;
+    animation-duration: 11s;
+    font-size: 70px;
+    font-family: 'GenEiLateGoN_v2';
+}
+
+.circles li:nth-child(20){
+    left: 15%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 10s;
+    animation-duration: 18s;
+    font-size: 30px;
+    font-family: 'gomarice_mukasi_mukasi';
+}
+
+@keyframes animate {
+    100%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    0%{
+        transform: translateY(-100vh) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}

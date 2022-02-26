@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>このじ なんのじ きになるじ</title>
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <script src="js/setting.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <div class = "text-content">
+      　<span class = "type-text" id="ityped"></span>
+        <span class = "ityped-cursor"></span>
+    </div>
+    <p></p>
+    <div class="explain">－知らない文字を見つけよう 新しい文字と出会おう－</div>
+    <div class="box-container">
+      <div class="box"></div>
+    </div>
+  <div class="area">
+    <ul class="circles">
+    </ul>
+  </div >
+</div>
+<script src="https://unpkg.com/ityped@1.0.3"></script>
+<script>
+  var fontList = ["このじ なんのじ きになるじ  "];
+  ityped.init(document.querySelector("#ityped"), {
+    strings: fontList,  
+    startDelay: 200,    
+    typeSpeed: 130,     
+    loop: false,         
+    backSpeed:  100,    
+    backDelay:  150,    
+    showCursor: false, 
+    cursorChar: "",     
+  })
+</script>
+<script>$(function() {
+  setInterval(function() {
+    $('.explain').fadeIn(1000);
+  }, 2700);
+});</script>
+</body>
+</html>
