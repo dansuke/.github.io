@@ -30,6 +30,7 @@
     padding: 0px;
 }
 
+
 head{
     font-family: 'karakaze', sans-serif;
 }
@@ -48,10 +49,6 @@ body{
   background-color: #3b3b3b;
   color: #ffffff;
   height:5vh;
-}
-
-.main {
-  z-index: 100;
 }
 
 .explain
@@ -88,6 +85,7 @@ body{
 {
     top: 20vmin;
     position: absolute;
+    z-index: 1;
     background-color: rgba(0, 0, 0, 0.3);
     width: 70%;
     left: 5%;
@@ -107,7 +105,6 @@ body{
     background-image: linear-gradient( transparent 95%, rgba(0, 0, 0, .06) 50%, rgba(0, 0, 0, .06)), linear-gradient( 90deg, transparent 95%, rgba(0, 0, 0, .06) 50%, rgba(0, 0, 0, .06) );
     background-size: 3vmin 3vmin;
     background-repeat: repeat;
-    z-index: 0;
 }
 
 .circles{

@@ -2,8 +2,8 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>このじ なんのじ きになるじ</title>
   <link rel="stylesheet" href="style.css">
+  <title>このじ なんのじ きになるじ</title>
   <meta http-equiv="Cache-Control" content="no-cache">
   <script src="js/setting.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -15,36 +15,26 @@
       　<span class = "type-text" id="ityped"></span>
         <span class = "ityped-cursor"></span>
     </div>
-    <p></p>
     <div class="explain">－知らない文字を見つけよう 新しい文字と出会おう－</div>
     <div class="box-container">
-      <div class="box"></div>
+      <div class="box">画像を入力して下さい</div>
+      <form method="POST" action="sample.cgi">
+        <p>お名前：<input type="text" name="NAME"></p>
+        <p>メールアドレス：<input type="text" name="email"></p>
+        <p><input type="submit" value="送信する"></p>
+        <p><input type="reset" value="取消する"></p>
+      </form>
     </div>
+
     <div class="area">
       <ul class="circles">
-          <li>あ</li>
-          <li>あ</li>
-          <li>あ</li>
-          <li>あ</li>
-          <li>あ</li>
-          <li>あ</li>
-          <li>あ</li>
-          <li>あ</li>
-          <li>あ</li>
-          <li>あ</li>
-          <li>あ</li>
-          <li>あ</li>
-          <li>あ</li>
-          <li>あ</li>
-          <li>あ</li>
-          <li>あ</li>
-          <li>あ</li>
-          <li>あ</li>
-          <li>あ</li>
-          <li>あ</li>
+        <script>
+          for (i=0; i<20; i++) document.write("<li>あ</li>");
+        </script>
       </ul>
     </div >
-</div>
+    
+  </div>
 
 <script src="https://unpkg.com/ityped@1.0.3"></script>
 <script>
@@ -60,6 +50,7 @@
     cursorChar: "",     
   })
 </script>
+
 <script>$(function() {
   setInterval(function() {
     $('.explain').fadeIn(1000);
