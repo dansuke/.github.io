@@ -89,12 +89,13 @@ body{
     background-color: rgba(0, 0, 0, 0.3);
     width: 70%;
     left: 5%;
-    padding: 3em 3em;
+    padding: 3vmin;
 }
 
 .box{
     color: #ffffff;
     font-size: 1em;
+    margin-bottom: 3vmin;
 }
 
 .area{
@@ -223,7 +224,7 @@ body{
     left: 10%;
     width: 150px;
     height: 150px;
-    animation-delay: 0s;
+    animation-delay: 4s;
     animation-duration: 20s;
     font-size: 150px;
     font-family: 'Reggae One', cursive;
