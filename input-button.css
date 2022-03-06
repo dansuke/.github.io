@@ -3,6 +3,7 @@
     border: #ddd dashed 5px;
     min-height: 200px;
     text-align: center;
+    padding: 3vmin;
   }
 #dragDropArea p{
     color: #999;

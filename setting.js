@@ -35,7 +35,7 @@ function photoPreview(event, f = null) {
     img.setAttribute("id", "previewImage");
     preview.appendChild(img);
     document.getElementById('previewImage').style.width = '80%';
-    document.getElementById('previewImage').setAttribute("id", "spacing");
+    document.getElementById('previewImage').style.border = '#ddd 5px solid';
   };
 
   reader.readAsDataURL(file);
