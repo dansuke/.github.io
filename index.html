@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="input-button.css">
   <title>このじ なんのじ きになるじ</title>
   <meta http-equiv="Cache-Control" content="no-cache">
-  <script src="js/setting.js"></script>
+  <script src="setting.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
@@ -23,17 +23,16 @@
       <form method="post" enctype="multipart/form-data">
         <div id="dragDropArea">
             <div class="drag-drop-inside">
-                <br></br>
+                <div id="spacing"></div>
                 <p class="drag-drop-info">ここにファイルをドロップ</p>
                 <p>または</p>
                 <p class="drag-drop-buttons">
                     <input id="fileInput" type="file" accept="image/*" value="ファイルを選択" name="photo" onChange="photoPreview(event)">
                 </p>
-                <br></br>
+                <div id="spacing"></div>
                 <div id="previewArea"></div>
             </div>
         </div>
-        <button type="submit" name="submit" value="登録">登録<button>
       </form>
     </div>
 

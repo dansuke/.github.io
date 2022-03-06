@@ -30,6 +30,10 @@
     padding: 0px;
 }
 
+#spacing{
+    padding: 3vmin;
+}
+
 
 head{
     font-family: 'karakaze', sans-serif;
