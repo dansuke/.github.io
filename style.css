@@ -91,7 +91,6 @@ main{
     top: 20vmin;
     position: absolute;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.7);
     left: 10%;
     right: 10%;
     padding: 3vmin;
