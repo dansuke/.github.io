@@ -39,6 +39,11 @@ body{
     font-family: 'Sawarabi Mincho', sans-serif;
 }
 
+main{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header {
   background-color: #3b3b3b;
   color: #ffffff;
@@ -81,21 +86,21 @@ body{
     font-size: 6vmin;
 }
 
-.box-container
+.container
 {
     top: 20vmin;
     position: absolute;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 70%;
-    left: 5%;
+    background-color: rgba(255, 255, 255, 0.7);
+    left: 10%;
+    right: 10%;
     padding: 3vmin;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 .box{
     color: #ffffff;
-    font-size: 1em;
-    margin-bottom: 3vmin;
 }
 
 .area{

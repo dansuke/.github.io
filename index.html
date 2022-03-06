@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="input-button.css">
   <title>このじ なんのじ きになるじ</title>
   <meta http-equiv="Cache-Control" content="no-cache">
   <script src="js/setting.js"></script>
@@ -15,21 +16,34 @@
       　<span class = "type-text" id="ityped"></span>
         <span class = "ityped-cursor"></span>
     </div>
+
     <div class="explain">－知らない文字を見つけよう 新しい文字と出会おう－</div>
-    <div class="box-container">
-      <div class="box">画像を入力して下さい</div>
-      <form method="POST" action="sample.cgi">
-        <p>お名前：<input type="text" name="NAME"></p>
-        <p>メールアドレス：<input type="text" name="email"></p>
-        <p><input type="submit" value="送信する"></p>
-        <p><input type="reset" value="取消する"></p>
-      </form>
+
+    <div class="container">
+      <div id="upFileWrap">
+        <div id="inputFile">
+            <!-- ドラッグ&ドロップエリア -->
+            <p id="dropArea">ここにファイルをドロップしてください<br>または</p>
+            <!-- 通常のinput[type=file] -->
+            <div id="inputFileWrap">
+                <input type="file" name="uploadFile" id="uploadFile", accept="image/*" value="ファイルを選択" name="photo" onChange="photoPreview(event)">
+                <div id="btnInputFile"><span>ファイルを選択する</span></div>
+                <div id="btnChangeFile"><span>ファイルを変更する</span></div>
+            </div>
+        </div>
+      </div>
     </div>
 
     <div class="area">
       <ul class="circles">
         <script>
-          for (i=0; i<20; i++) document.write("<li>あ</li>");
+          var kana = "あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをん";
+          var kanal = kana.length;
+          document.open();
+          for (i=0; i<20; i++){
+          document.write('<li>'+kana[Math.floor(Math.random()*kanal)]+'</li>');
+          }
+          document.close();
         </script>
       </ul>
     </div >
@@ -52,9 +66,10 @@
 </script>
 
 <script>$(function() {
-  setInterval(function() {
+  setInterval(function() {                                                                                                      
     $('.explain').fadeIn(1000);
   }, 2700);
 });</script>
+
 </body>
 </html>
