@@ -3,14 +3,17 @@ var fileInput = document.getElementById('fileInput');
 fileArea.addEventListener('dragover', function(evt){
   evt.preventDefault();
   fileArea.classList.add('dragover');
+  fileArea.style.backgroundColor = "rgba(135, 206, 235, 0.3)";
 });
 fileArea.addEventListener('dragleave', function(evt){
     evt.preventDefault();
     fileArea.classList.remove('dragover');
+    fileArea.style.backgroundColor = "rgba(255, 255, 255, 0.7)";
 });
 fileArea.addEventListener('drop', function(evt){
     evt.preventDefault();
     fileArea.classList.remove('dragenter');
+    fileArea.style.backgroundColor = "rgba(255, 255, 255, 0.7)";
     var files = evt.dataTransfer.files;
     console.log("DRAG & DROP");
     console.table(files);
