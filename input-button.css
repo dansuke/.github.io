@@ -5,15 +5,22 @@
     text-align: center;
     padding: 3vmin;
     display: block;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 #dragDropArea p{
     color: #999;
-    font-weight: bold;
     font-size: 1em;
 }
 #dragDropArea .drag-drop-buttons{
     margin-top: 20px;
     font-size: 1em;
+}
+
+#fileInput{
+    font-size: 1em;
+    color: black;
+    font-family: 'Sawarabi Mincho', sans-serif;
 }
 .drag-drop-buttons input{
     margin: auto;

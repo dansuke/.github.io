@@ -95,15 +95,43 @@ main{
     top: 20vmin;
     position: absolute;
     z-index: 1;
-    left: 10%;
-    right: 10%;
+    left: 0%;
+    right: 0%;
     padding: 3vmin;
     text-align: center;
     font-size: 1.5em;
 }
 
 .box{
+    position: relative;
+    height: 40vmin;
+    margin-top: 3vmin;
+    margin-bottom: 3vmin;
+}
+
+.box p {
+    position: absolute;
+    margin-left: 1vmin;
+    /* 角丸 */
+    border-radius: 1vmin;
+    width: 20%;
+    transform: skewX(-30deg);
+    margin-left: 5%;
+    font-size: 2em;
+    background-color: rgb(73, 73, 73);
     color: #ffffff;
+    z-index: 1;
+}
+
+.sent{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    border-radius: 3vmin;
+    top: 3vmin;
+    height: 30vmin;
+    background-color: rgb(255, 255, 255, 0.7);
+    border: #ddd 5px solid;
 }
 
 .area{
