@@ -4,6 +4,7 @@
     min-height: 200px;
     text-align: center;
     padding: 3vmin;
+    display: block;
   }
 #dragDropArea p{
     color: #999;
