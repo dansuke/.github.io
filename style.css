@@ -46,6 +46,7 @@ body{
 main{
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
 }
 
 .header {
@@ -137,7 +138,6 @@ main{
 .area{
     width: 100%;
     top:0vh;
-    height:100vh;
     background-color: rgb(255, 255, 255);
     background-image: linear-gradient( transparent 95%, rgba(0, 0, 0, .06) 50%, rgba(0, 0, 0, .06)), linear-gradient( 90deg, transparent 95%, rgba(0, 0, 0, .06) 50%, rgba(0, 0, 0, .06) );
     background-size: 3vmin 3vmin;
@@ -374,7 +374,7 @@ main{
     }
 
     0%{
-        transform: translateY(-100vh) rotate(720deg);
+        transform: translateY(-100vmin) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
     }

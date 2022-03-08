@@ -1,5 +1,6 @@
 var fileArea = document.getElementById('dragDropArea');
 var fileInput = document.getElementById('fileInput');
+var containerArea = document.getElementById('container');
 fileArea.addEventListener('dragover', function(evt){
   evt.preventDefault();
   fileArea.classList.add('dragover');
@@ -39,7 +40,11 @@ function photoPreview(event, f = null) {
     preview.appendChild(img);
     document.getElementById('previewImage').style.width = '80%';
     document.getElementById('previewImage').style.border = '#ddd 5px solid';
+    document.getElementById('area').style.height = document.getElementById('container').offsetHeight + document.getElementById('container').offsetTop +'px';
   };
 
   reader.readAsDataURL(file);
 }
+
+console.log(containerArea);
+document.getElementById('area').style.height = document.getElementById('container').offsetHeight + document.getElementById('container').offsetTop + 10 + "px";
