@@ -40,7 +40,11 @@ function photoPreview(event, f = null) {
     preview.appendChild(img);
     document.getElementById('previewImage').style.width = '80%';
     document.getElementById('previewImage').style.border = '#ddd 5px solid';
-    document.getElementById('area').style.height = document.getElementById('container').offsetHeight + document.getElementById('container').offsetTop +'px';
+    document.getElementById('previewImage').draggable = 'false';
+    img.onload = function() {
+      // ここに読み込みが完了したら実行したい処理を記述する
+      document.getElementById('area').style.height = document.getElementById('container').offsetHeight + document.getElementById('container').offsetTop +'px';
+    }
   };
 
   reader.readAsDataURL(file);
