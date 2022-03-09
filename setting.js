@@ -4,7 +4,7 @@ var containerArea = document.getElementById('container');
 fileArea.addEventListener('dragover', function(evt){
   evt.preventDefault();
   fileArea.classList.add('dragover');
-  fileArea.style.backgroundColor = "rgba(135, 206, 235, 0.3)";
+  fileArea.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
 });
 fileArea.addEventListener('dragleave', function(evt){
     evt.preventDefault();

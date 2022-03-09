@@ -12,9 +12,23 @@
     color: #999;
     font-size: 1em;
 }
-#dragDropArea .drag-drop-buttons{
-    margin-top: 20px;
+#dragDropArea .dragDropButton{
+    margin-top: 5vmin;
+    padding: 1vmin;
     font-size: 1em;
+    position: relative;
+    display: inline-block;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #FFF;
+    border-radius: 0.5em;
+    background-color:  #999;
+    border: #ddd 5px solid;
+    cursor: pointer;
 }
 
 #fileInput{
@@ -22,6 +36,7 @@
     color: black;
     font-family: 'Sawarabi Mincho', sans-serif;
 }
-.drag-drop-buttons input{
+.dragDropButton input{
     margin: auto;
+    display: none;
 }

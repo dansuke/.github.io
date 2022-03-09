@@ -11,13 +11,15 @@
 
 <body>
   <div class="main">
-    <div class = "text-content">
-      　<span class = "type-text" id="ityped"></span>
-        <span class = "ityped-cursor"></span>
+
+    <div class="header">
+      <div class = "text-content">
+        　<span class = "type-text" id="ityped"></span>
+          <span class = "ityped-cursor"></span>
+      </div>
+      <div class="explain">－知らない文字を見つけよう 新しい文字と出会おう－</div>
     </div>
-
-    <div class="explain">－知らない文字を見つけよう 新しい文字と出会おう－</div>
-
+    
     <div class="container" id="container">
       <div class="box">
         <p>Step.1</p>
@@ -33,9 +35,10 @@
                 <div id="spacing"></div>
                 <p class="drag-drop-info">ここにファイルをドロップ</p>
                 <p>または</p>
-                <p class="drag-drop-buttons">
-                    <input id="fileInput" type="file" accept="image/*" value="ファイルを選択" name="photo" onChange="photoPreview(event)">
-                </p>
+                  <label class="dragDropButton">
+                    ファイルを選択
+                      <input id="fileInput" type="file" accept="image/*" value="ファイルを選択" name="photo" onChange="photoPreview(event)">
+                  </label>
                 <div id="spacing"></div>
                 <div id="previewArea"></div>
             </div>
