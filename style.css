@@ -62,8 +62,8 @@ main{
   z-index: 10000;
   width:100%; 
   height: 17vmin;
-  background-color: rgba(255, 255, 255, 0.2); /* 背景色 */
-  border: 1px solid rgba(255, 255, 255, 0.4); /* ボーダー */
+  background-color: rgba(255, 255, 255, 0.2); 
+  border: 1px solid rgba(255, 255, 255, 0.4); 
   border-right-color: rgba(255, 255, 255, 0.2);
   border-bottom-color: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(0.3em);
@@ -89,12 +89,16 @@ main{
     font-size: 3vmin;
     text-align: center;
     color: #9b9b9b;
+    position: absolute;
+    z-index: 100;
 }
 
 .text-content{
+    position: absolute;
     text-align: center;
     top: 2vmin;
     width: 100%;
+    z-index: 100;
 }
 
 .type-text{
