@@ -51,3 +51,10 @@ function photoPreview(event, f = null) {
 
 console.log(containerArea);
 document.getElementById('area').style.height = document.getElementById('container').offsetHeight + document.getElementById('container').offsetTop + 10 + "px";
+
+function resizeWindow(){
+  console.log('Resize');
+  document.getElementById('area').style.height = document.getElementById('container').offsetHeight + document.getElementById('container').offsetTop + 10 + "px";
+}
+
+window.onresize = resizeWindow;
