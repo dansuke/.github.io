@@ -41,7 +41,6 @@ user-select: none;
     padding: 3vmin;
 }
 
-
 head{
     font-family: 'karakaze', sans-serif;
 }
@@ -151,10 +150,11 @@ main{
     left: 10%;
     border-radius: 3vmin;
     top: 3vmin;
-    height: 30vmin;
+    padding: 3vmin;
     background-color: rgb(255, 255, 255, 0.7);
     border: #ddd 5px solid;
 }
+
 
 .area{
     width: 100%;

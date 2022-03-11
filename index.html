@@ -17,7 +17,8 @@
         　<span class = "type-text" id="ityped"></span>
           <span class = "ityped-cursor"></span>
       </div>
-      <div class="explain">－知らない文字を見つけよう 新しい文字と出会おう－</div>
+      <div class="explain">－ひらがなフリーフォント検索支援ツール－</div>
+      <!-- <div class="explain">画像中のひらがなから類似するフォントを検索します</div> -->
     </div>
     
     <div class="container" id="container">
@@ -27,7 +28,9 @@
       </div>
       <div class="box">
         <p>Step.2</p>
-        <div class="sent"></div>
+        <div class="sent">
+          <iframe height="600px" width="960px" src="unity.html"  allowfullscreen class="unity"></iframe>
+        </div>
       </div>
       <form method="post" enctype="multipart/form-data">
         <div id="dragDropArea" draggable="false">
@@ -47,13 +50,13 @@
     </div>
 
     <div class="area" id="area">
-      <ul class="circles">
+      <ul class="circles", id="circles">
         <script>
           var kana = "あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをん";
           var kanal = kana.length;
           document.open();
           for (i=0; i<20; i++){
-          document.write('<li>'+kana[Math.floor(Math.random()*kanal)]+'</li>');
+            document.write('<li>'+kana[Math.floor(Math.random()*kanal)]+'</li>');
           }
           document.close();
         </script>

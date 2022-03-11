@@ -46,7 +46,6 @@ function photoPreview(event, f = null) {
       document.getElementById('area').style.height = document.getElementById('container').offsetHeight + document.getElementById('container').offsetTop +'px';
     }
   };
-
   reader.readAsDataURL(file);
 }
 
