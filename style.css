@@ -1,33 +1,34 @@
-@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Hina+Mincho&family=Kaisei+Opti:wght@500&family=Mochiy+Pop+P+One&family=New+Tegomin&family=Noto+Serif+JP:wght@500&family=Otomanopee+One&family=Palette+Mosaic&family=Potta+One&family=Reggae+One&family=Sawarabi+Mincho&family=Stick&family=Train+One&family=Yomogi&family=Yuji+Mai&family=Zen+Maru+Gothic:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&family=Hina+Mincho&family=Kaisei+Opti:wght@500&family=Mochiy+Pop+P+One&family=New+Tegomin&family=Noto+Serif+JP:wght@500&family=Otomanopee+One&family=Palette+Mosaic&family=Potta+One&family=Reggae+One&family=Sawarabi+Mincho&family=Stick&family=Train+One&family=Yomogi&family=Yuji+Mai&family=Zen+Maru+Gothic:wght@300&display=swap");
 @font-face {
-	font-family: 'nicoca';
+	font-family: "nicoca";
 	src: url(/fonts/nicoca_v1.ttf);
 }
 @font-face {
-	font-family: 'karakaze';
+	font-family: "karakaze";
 	src: url(/fonts/karakaze-R.ttf);
 }
 @font-face {
-	font-family: 'Corporate-Mincho-ver2';
+	font-family: "Corporate-Mincho-ver2";
 	src: url(/fonts/Corporate-Mincho-ver2.ttf);
 }
 @font-face {
-	font-family: 'GenEiLateGoN_v2';
+	font-family: "GenEiLateGoN_v2";
 	src: url(/fonts/GenEiLateGoN_v2.ttf);
 }
 @font-face {
-	font-family: 'gomarice_mukasi_mukasi';
+	font-family: "gomarice_mukasi_mukasi";
 	src: url(/fonts/gomarice_mukasi_mukasi.ttf);
 }
 @font-face {
-	font-family: 'Kaisotai';
+	font-family: "Kaisotai";
 	src: url(/fonts/Kaisotai-Next-UP-B.ttf);
 }
 
 *{
     margin: 0px;
     padding: 0px;
+    --height: 3000px;
 }
 
 div {
@@ -42,11 +43,11 @@ user-select: none;
 }
 
 head{
-    font-family: 'karakaze', sans-serif;
+    font-family: "karakaze", sans-serif;
 }
 
 body{
-    font-family: 'Sawarabi Mincho', sans-serif;
+    font-family: "Sawarabi Mincho", sans-serif;
 }
 
 main{
@@ -102,7 +103,7 @@ main{
 
 .type-text{
     color: rgb(0, 0, 0);
-    font-family: 'karakaze';
+    font-family: "karakaze";
     font-size: 8vmin;
 }
 
@@ -180,228 +181,25 @@ main{
     user-select: none;
 }
 
-.circles li{
+.circle{
     position: absolute;
     display: block;
-    list-style: none;
-    width: 20px;
-    height: 20px;
     background: rgba(255, 255, 255, 0);
-    animation: animate 25s linear infinite;
+    animation: animate linear infinite;
     color: #a1a1a1;
     -ms-filter: blur(2px);
     filter: blur(2px);
-    font-family: 'nicoca';
     top: -200px;
-}
-
-
-.circles li:nth-child(1){
-    left: 25%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 8s;
-    font-size: 80px;
-    font-family: 'DotGothic16', sans-serif;
-}
-
-
-.circles li:nth-child(2){
-    left: 10%;
-    width: 50px;
-    height: 50px;
-    animation-delay: 2s;
-    animation-duration: 12s;
-    font-size: 50px;
-    font-family: 'Hina Mincho', serif;
-}
-
-.circles li:nth-child(3){
-    left: 70%;
-    width: 70px;
-    height: 70px;
-    animation-delay: 14s;
-    font-size: 70px;
-    font-family: 'Kaisei Opti', serif;
-}
-
-.circles li:nth-child(4){
-    left: 40%;
-    width: 60px;
-    height: 60px;
-    animation-delay: 10s;
-    animation-duration: 18s;
-    font-size: 60px;
-    font-family: 'Mochiy Pop P One', sans-serif;
-}
-
-.circles li:nth-child(5){
-    left: 65%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 5s;
-    font-size: 20px;
-    font-family: 'New Tegomin', serif;
-}
-
-.circles li:nth-child(6){
-    left: 75%;
-    width: 110px;
-    height: 110px;
-    animation-delay: 3s;
-    font-size: 110px;
-    font-family: 'Noto Serif JP', serif;
-}
-
-.circles li:nth-child(7){
-    left: 75%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 7s;
-    font-size: 150px;
-    font-family: 'Otomanopee One', sans-serif;
-}
-
-.circles li:nth-child(8){
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    animation-delay: 15s;
-    animation-duration: 45s;
-    font-size: 25px;
-    font-family: 'Palette Mosaic', cursive;
-}
-
-.circles li:nth-child(9){
-    left: 20%;
-    width: 15px;
-    height: 15px;
-    animation-delay: 2s;
-    animation-duration: 35s;
-    font-size: 15px;
-    font-family: 'Potta One', cursive;
-}
-
-.circles li:nth-child(10){
-    left: 10%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 4s;
-    animation-duration: 20s;
-    font-size: 150px;
-    font-family: 'Reggae One', cursive;
-}
-
-.circles li:nth-child(11){
-    left: 50%;
-    width: 100px;
-    height: 100px;
-    animation-delay: 5s;
-    animation-duration: 20s;
-    font-size: 100px;
-    font-family: 'Sawarabi Mincho', sans-serif;
-}
-
-.circles li:nth-child(12){
-    left: 10%;
-    width: 30px;
-    height: 30px;
-    animation-delay: 8s;
-    animation-duration: 30s;
-    font-size: 30px;
-    font-family: 'Stick', sans-serif;
-}
-
-.circles li:nth-child(13){
-    left: 85%;
-    width: 10px;
-    height: 10px;
-    animation-delay: 10s;
-    animation-duration: 15s;
-    font-size: 10px;
-    font-family: 'Train One', cursive;
-}
-
-.circles li:nth-child(14){
-    left: 75%;
-    width: 40px;
-    height: 40px;
-    animation-delay: 9s;
-    animation-duration: 25s;
-    font-size: 40px;
-    font-family: 'Yomogi', cursive;
-}
-
-.circles li:nth-child(15){
-    left: 65%;
-    width: 90px;
-    height: 90px;
-    animation-delay: 5s;
-    animation-duration: 15s;
-    font-size: 90px;
-    font-family: 'Yuji Mai', serif;
-}
-
-.circles li:nth-child(16){
-    left: 55%;
-    width: 25px;
-    height: 25px;
-    animation-delay: 10s;
-    animation-duration: 20s;
-    font-size: 25px;
-    font-family: 'Zen Maru Gothic', sans-serif;
-}
-
-.circles li:nth-child(17){
-    left: 45%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 7s;
-    animation-duration: 10s;
-    font-size: 80px;
-    font-family:'karakaze'
-}
-
-.circles li:nth-child(18){
-    left: 35%;
-    width: 50px;
-    height: 50px;
-    animation-delay: 5s;
-    animation-duration: 15s;
-    font-size: 50px;
-    font-family: 'Corporate-Mincho-ver2';
-}
-
-.circles li:nth-child(19){
-    left: 25%;
-    width: 70px;
-    height: 70px;
-    animation-delay: 3s;
-    animation-duration: 11s;
-    font-size: 70px;
-    font-family: 'GenEiLateGoN_v2';
-}
-
-.circles li:nth-child(20){
-    left: 15%;
-    width: 30px;
-    height: 30px;
-    animation-delay: 10s;
-    animation-duration: 18s;
-    font-size: 30px;
-    font-family: 'gomarice_mukasi_mukasi';
 }
 
 @keyframes animate {
     100%{
-        transform: translateY(1000px) rotate(0deg);
-        opacity: 1;
-        border-radius: 0;
+        transform: translateY(var(--height)) rotate(0deg);
+        opacity: 0.7;
     }
 
     0%{
         transform: translateY(-150px) rotate(720deg);
         opacity: 0;
-        border-radius: 50%;
     }
 }
