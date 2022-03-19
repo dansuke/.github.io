@@ -17,8 +17,7 @@
         　<span class = "type-text" id="ityped"></span>
           <span class = "ityped-cursor"></span>
       </div>
-      <div class="explain">－ひらがなフリーフォント検索支援ツール－</div>
-      <!-- <div class="explain">画像中のひらがなから類似するフォントを検索します</div> -->
+      <div class="explain">知らない街に出かけよう　新しい文字と出会おう</div>
     </div>
     
     <div class="container" id="container">
@@ -44,6 +43,10 @@
                   </label>
                 <div id="spacing"></div>
                 <div id="previewArea"></div>
+                <label class="submitButton">
+                  画像を送信する
+                  <input type="submit" value="">
+                </label>
             </div>
         </div>
       </form>
@@ -54,7 +57,7 @@
         <script>
           var kana = "あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもやゆよらりるれろわをん";
           var kanaLen = kana.length;
-          var kanaNum = 70;
+          var kanaNum = 30;
           document.open();
           for (i=0; i<kanaNum; i++){
             document.write("<div class='circle'>"+kana[Math.floor(Math.random()*kanaLen)]+"</div>");

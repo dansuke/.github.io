@@ -32,6 +32,9 @@ function photoPreview(event, f = null) {
 
   if(previewImage != null) {
     preview.removeChild(previewImage);
+    // 以下2つの順番は重要
+    document.getElementsByClassName("submitButton")[0].style.display = "none";
+    document.getElementById("area").style.height = document.getElementById("container").offsetHeight + document.getElementById("container").offsetTop +"px";
   }
   reader.onload = function(event) {
     var img = document.createElement("img");
@@ -43,11 +46,12 @@ function photoPreview(event, f = null) {
     document.getElementById("previewImage").draggable = false;
     img.onload = function() {
       // ここに読み込みが完了したら実行したい処理を記述する
+      document.getElementsByClassName("submitButton")[0].style.display = "inline-block";
       document.getElementById("area").style.height = document.getElementById("container").offsetHeight + document.getElementById("container").offsetTop +"px";
     }
   };
   reader.readAsDataURL(file);
-}
+} 
 
 console.log(containerArea);
 document.getElementById("area").style.height = document.getElementById("container").offsetHeight + document.getElementById("container").offsetTop + 10 + "px";

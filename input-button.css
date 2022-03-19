@@ -31,13 +31,38 @@
     cursor: pointer;
 }
 
+#dragDropArea .submitButton{
+    margin-top: 5vmin;
+    padding: 1vmin;
+    font-size: 1em;
+    position: relative;
+    display: inline-block;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: #FFFFFF;
+    border-radius: 0.5em;
+    background-color:  #999;
+    border: #ddd 5px solid;
+    cursor: pointer;
+    display: none;
+}
+
 #fileInput{
     font-size: 1em;
     color: black;
-    font-family: 'Sawarabi Mincho', sans-serif;
+    font-family: "Sawarabi Mincho", sans-serif;
 }
 
 .dragDropButton input{
+    margin: auto;
+    display: none;
+}
+
+.submitButton input{
     margin: auto;
     display: none;
 }
